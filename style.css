@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    height:  625px;
+    width: 100%;
+    background-image: url(slike/background.png);
+    background-position: center;
+    background-size: cover;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+    position: relative;
+}
+.nav{
+    width: 100%;
+    height: 93.75px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 300px;
+    cursor: pointer;
+}
+.kolica{
+    width: 50px;
+    cursor: pointer;
+}
+nav{
+    flex: 1;
+    padding-left: 60px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0px 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #cc0052;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+}
+.content h1{
+    font-size: 50px;
+    font-weight: 100;
+    margin-top: 24px;
+    margin-bottom: 15px;
+    color: #232d60;
+ 
+}
+.content p{
+    font-size: 18px;
+    color: #6a7199;
+}
+.content{
+    margin-left: 10%;
+    margin-top: 10%;
+}
+.content .dugme{
+    display: inline-block;
+    background: linear-gradient(45deg , #87adfe, #ff77cd);
+    border-radius: 6px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #fff;
+}
+.ikonice{
+    margin-top: 40px;
+    display: flex;
+}
+.ikonice img{
+    width: 40px;
+    margin-right: 25px;
+}
+.slika{
+    height: 90%;
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+}
+.social{
+    transform: rotate(-90deg);
+    position: absolute;
+    left: -80px;
+    bottom: 180px;
+}
+.social a{
+    text-decoration: none;
+    color: #6a7199;
+    padding-right: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+@media only screen and (max-width: 600px) {
+    .container  { background-image: none;
+    }
+    .logo{
+        width: 50%;
+    }
+    nav ul li{
+        display:list-item;
+        list-style: none;
+        margin: 0px 5px;
+    }
+    .kolica{ 
+            width: 40px;
+            cursor: pointer;
+            margin: 0px 5px;
+    }
+    .content h1{
+        font-size: 40px;
+    
+    }
+    .content p{
+        font-size: 15px;  
+    }
+    .slika{
+       display: run-in;
+        position: relative;
+        bottom: 0;
+         max-width: 100%;
+         height: auto;
+          
+    }
+    .social{
+        
+        display: none;
+        
+    }
+  }
+
+  @media only screen and (max-width: 1200px) {
+      .slika{
+          display: none;
+      }
+  }
+  
